@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: auto;
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h4{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+.left-container{
+    display: inline-block;
+    width: 208px;
+    height: 945px;
+    position: fixed;
+}
+
+.logo{
+    width: 208px;
+    height: 130px;
+    display: block;
+}
+
+.logo-name{
+    margin-top: 13px;
+    margin-right: 25px;
+    float: right;
+    width: 110px;
+    height: 120px;
+}
+
+.logo-img{
+    margin-top: 10px;
+    margin-left: 23px;
+    float: left;
+    width: 50px;
+    height: 120px;
+    object-fit: cover;
+    width: 50px;
+    height: 120px;
+}
+
+.about-container{
+    width: 208px;
+    height: 700px;
+    font-family: "Hi Melody", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    background-color: #FBFDEA;
+}
+
+.cat-about{
+    margin-left: 40px;
+    margin-top: 15px;
+    padding-top: 35px;
+    width: 140px;
+    height: 80px;
+}
+
+.footer{
+    position: fixed;
+    background-color: #FBFDEA;
+    text-align: center;
+    width: 208px;
+    height: 100px;
+    font-family: "Hi Melody", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.contact{
+    background-color: #FBFDEA;
+    width: 208px;
+    height: 75px;
+    display: inline-block;
+}
+
+.right-container{
+    display: inline-block;
+    margin-left: 208px;
+    position: absolute;
+    /*background-color: bisque;*/
+    flex: 1;
+}
+
+article{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: calc(100% / 5);
+    min-width: 339px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+article:hover img {
+    transform: scale(1.2); 
+}
+
+img {
+    transition: transform 0.7s ease; 
+}
+
+.img-pop{
+    position: fixed;
+    left: 50%;
+    margin-left: -15.5%;
+    top: 50%;
+    margin-top: -350px;
+    border-radius: 25px;
+    overflow: hidden;
+    overflow: auto;
+    width: 800px;
+    height: 700px;
+    display: none;
+    transition: opacity 0.5s;
+}
+
+
+
+.back-img{
+    width: 208px;
+    height: 250px;
+    margin-top : 360px;
+    opacity: 0.8;
+}
+
+.back-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
