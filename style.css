@@ -272,7 +272,7 @@ img {
 
 }
 
-@media (min-width: 360px) and (max-width: 360px) {
+@media (min-width: 360px) and (max-width: 374px) {
     .left-container {
         width: 70%;
     }
@@ -379,7 +379,7 @@ img {
 
 }
 
-@media (min-width: 375px) and (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 413px) {
     .left-container {
         width: 70%;
     }
