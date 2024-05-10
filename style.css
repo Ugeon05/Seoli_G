@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+@import url(cssscreen.css) screen;
+@import url(csspprint.css) print;
 
 html body{
     margin: 0;
@@ -10,6 +12,11 @@ ul{
     margin: 0;
     padding: 0;
 }
+
+.img_responsive{
+    width: 100%;     
+    height: auto;
+  }
 
 .container{
     width: auto;
@@ -158,4 +165,20 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 767px){
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }
