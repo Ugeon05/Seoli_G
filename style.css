@@ -2,23 +2,23 @@
 @import url(cssscreen.css) screen;
 @import url(csspprint.css) print;
 
-html body{
+html body {
     margin: 0;
     padding: 0;
 }
 
-ul{
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.img_responsive{
-    width: 100%;     
+.img_responsive {
+    width: 100%;
     height: auto;
-  }
+}
 
-.container{
+.container {
     width: auto;
     height: 1000px;
     margin: 0;
@@ -26,29 +26,29 @@ ul{
     position: relative;
 }
 
-h4{
+h4 {
     margin: 0px;
     padding: 0px;
 }
 
-h1{
+h1 {
     font-size: 20px;
 }
 
-.left-container{
+.left-container {
     display: inline-block;
     width: 208px;
     height: 945px;
     position: fixed;
 }
 
-.logo{
+.logo {
     width: 208px;
     height: 130px;
     display: block;
 }
 
-.logo-name{
+.logo-name {
     margin-top: 13px;
     margin-right: 25px;
     float: right;
@@ -56,7 +56,7 @@ h1{
     height: 120px;
 }
 
-.logo-img{
+.logo-img {
     margin-top: 10px;
     margin-left: 23px;
     float: left;
@@ -67,7 +67,7 @@ h1{
     height: 120px;
 }
 
-.about-container{
+.about-container {
     width: 208px;
     height: 700px;
     font-family: "Hi Melody", sans-serif;
@@ -77,7 +77,7 @@ h1{
     background-color: #FBFDEA;
 }
 
-.cat-about{
+.cat-about {
     margin-left: 40px;
     margin-top: 15px;
     padding-top: 35px;
@@ -85,7 +85,7 @@ h1{
     height: 80px;
 }
 
-.footer{
+.footer {
     position: fixed;
     background-color: #FBFDEA;
     text-align: center;
@@ -97,14 +97,14 @@ h1{
     font-size: 20px;
 }
 
-.contact{
+.contact {
     background-color: #FBFDEA;
     width: 208px;
     height: 75px;
     display: inline-block;
 }
 
-.right-container{
+.right-container {
     display: inline-block;
     margin-left: 208px;
     position: absolute;
@@ -112,7 +112,7 @@ h1{
     flex: 1;
 }
 
-article{
+article {
     margin: 0;
     padding: 0;
     float: left;
@@ -123,21 +123,21 @@ article{
     overflow: hidden;
 }
 
-article img{
+article img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 article:hover img {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
 img {
-    transition: transform 0.7s ease; 
+    transition: transform 0.7s ease;
 }
 
-.img-pop{
+.img-pop {
     position: fixed;
     left: 50%;
     margin-left: -15.5%;
@@ -145,7 +145,6 @@ img {
     margin-top: -350px;
     border-radius: 25px;
     overflow: hidden;
-    overflow: auto;
     width: 800px;
     height: 700px;
     display: none;
@@ -153,32 +152,337 @@ img {
 }
 
 
-
-.back-img{
+.back-img {
     width: 208px;
     height: 250px;
-    margin-top : 360px;
+    margin-top: 360px;
     opacity: 0.8;
 }
 
-.back-img img{
+.back-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-@media (max-width: 767px){
-    
+@media (min-width: 414px) and (max-width: 414px) {
+    .left-container {
+        width: 70%;
+    }
+
+    .about-container {
+        margin-top: 0px;
+        padding: 0;
+        font-size: 15px;
+        width: 50%;
+        height: 530px;
+    }
+
+    .contact {
+        width: 70%;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .logo-img {
+        width: 20px;
+        height: 12px;
+        margin-top: 22px;
+        margin-left: 15px;
+    }
+
+    .logo-name {
+        width: 50%;
+        font-size: 10px;
+        height: 12px;
+        margin-top: 30px;
+        margin-right: 16px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    .logo-img img {
+        width: 40px;
+        height: 90px;
+    }
+
+    .cat-about {
+        margin-left: 10px;
+        margin-top: 0px;
+        padding-top: 20px;
+        width: 140px;
+        height: 80px;
+    }
+
+    .back-img {
+        width: 100%;
+        height: 150px;
+        margin-top: 285px;
+        opacity: 0.8;
+    }
+
+    .footer {
+        position: fixed;
+        background-color: #FBFDEA;
+        text-align: center;
+        width: 35%;
+        height: 200px;
+        font-size: 15px;
+    }
+
+    .contact {
+        background-color: #FBFDEA;
+        width: 100%;
+        height: 75px;
+        display: inline-block;
+    }
+
+    article {
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 70%;
+        min-width: 258px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .right-container {
+        display: inline-block;
+        margin-left: 139px;
+        position: absolute;
+        /*background-color: bisque;*/
+        width: 20%;
+    }
+
+    .img-pop {
+        margin-left: -47.5%;
+        margin-top: -150px;
+        border-radius: 5px;
+        width: 95%;
+        height: 300px;
+    }
+
+
+
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 360px) and (max-width: 360px) {
+    .left-container {
+        width: 70%;
+    }
+
+    .about-container {
+        margin-top: 0;
+        padding: 0;
+        font-size: 15px;
+        width: 50%;
+        height: 415px;
+    }
+
+    .contact {
+        width: 70%;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .logo-img {
+        width: 20px;
+        height: 12px;
+        margin-top: 10px;
+        margin-left: 12px;
+    }
+
+    .logo-name {
+        width: 50%;
+        font-size: 10px;
+        height: 12px;
+        margin-top: 15px;
+        margin-right: 14px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    .logo-img img {
+        width: 40px;
+        height: 90px;
+    }
+
+    .cat-about {
+        margin-left: 10px;
+        margin-top: 0px;
+        padding-top: 30px;
+        width: 140px;
+        height: 80px;
+    }
+
+    .back-img {
+        width: 100%;
+        height: 150px;
+        margin-top: 170px;
+        opacity: 0.8;
+    }
+
+    .footer {
+        position: fixed;
+        background-color: #FBFDEA;
+        text-align: center;
+        width: 35%;
+        height: 200px;
+        font-size: 15px;
+    }
+
+    .contact {
+        background-color: #FBFDEA;
+        width: 100%;
+        height: 75px;
+        display: inline-block;
+    }
+
+    article {
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 70%;
+        min-width: 222px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .right-container {
+        display: inline-block;
+        margin-left: 121px;
+        position: absolute;
+        /*background-color: bisque;*/
+        width: 20%;
+    }
+
+    .img-pop {
+        margin-left: -47.5%;
+        margin-top: -150px;
+        border-radius: 5px;
+        width: 95%;
+        height: 287px;
+    }
+
+
 
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 375px) and (max-width: 375px) {
+    .left-container {
+        width: 70%;
+    }
+
+    .about-container {
+        margin-top: 0;
+        padding: 0;
+        font-size: 15px;
+        width: 50%;
+        height: 445px;
+    }
+
+    .contact {
+        width: 70%;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .logo-img {
+        width: 20px;
+        height: 12px;
+        margin-top: 10px;
+        margin-left: 12px;
+    }
+
+    .logo-name {
+        width: 50%;
+        font-size: 10px;
+        height: 12px;
+        margin-top: 15px;
+        margin-right: 14px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    .logo-img img {
+        width: 40px;
+        height: 90px;
+    }
+
+    .cat-about {
+        margin-left: 10px;
+        margin-top: 0px;
+        padding-top: 30px;
+        width: 140px;
+        height: 80px;
+    }
+
+    .back-img {
+        width: 100%;
+        height: 150px;
+        margin-top: 200px;
+        opacity: 0.8;
+    }
+
+    .footer {
+        position: fixed;
+        background-color: #FBFDEA;
+        text-align: center;
+        width: 35%;
+        height: 200px;
+        font-size: 15px;
+    }
+
+    .contact {
+        background-color: #FBFDEA;
+        width: 100%;
+        height: 75px;
+        display: inline-block;
+    }
+
+    article {
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 70%;
+        min-width: 231px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .right-container {
+        display: inline-block;
+        margin-left: 127px;
+        position: absolute;
+        /*background-color: bisque;*/
+        width: 20%;
+    }
+
+    .img-pop {
+        margin-left: -47.5%;
+        margin-top: -150px;
+        border-radius: 5px;
+        width: 95%;
+        height: 300px;
+    }
+
+
 
 }
 
-@media (min-width: 1200px) {
-
-}
