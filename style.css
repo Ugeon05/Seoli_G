@@ -379,7 +379,7 @@ img {
 
 }
 
-@media (min-width: 375px) and (max-width: 413px) {
+@media (min-width: 375px) and (max-width: 389px) {
     .left-container {
         width: 70%;
     }
@@ -469,6 +469,113 @@ img {
     .right-container {
         display: inline-block;
         margin-left: 127px;
+        position: absolute;
+        /*background-color: bisque;*/
+        width: 20%;
+    }
+
+    .img-pop {
+        margin-left: -47.5%;
+        margin-top: -150px;
+        border-radius: 5px;
+        width: 95%;
+        height: 300px;
+    }
+
+
+
+}
+
+@media (min-width: 390px) and (max-width: 413px) {
+    .left-container {
+        width: 70%;
+    }
+
+    .about-container {
+        margin-top: 0;
+        padding: 0;
+        font-size: 15px;
+        width: 50%;
+        height: 585px;
+    }
+
+    .contact {
+        width: 70%;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .logo-img {
+        width: 20px;
+        height: 12px;
+        margin-top: 10px;
+        margin-left: 12px;
+    }
+
+    .logo-name {
+        width: 50%;
+        font-size: 10px;
+        height: 12px;
+        margin-top: 15px;
+        margin-right: 14px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    .logo-img img {
+        width: 40px;
+        height: 90px;
+    }
+
+    .cat-about {
+        margin-left: 10px;
+        margin-top: 0px;
+        padding-top: 30px;
+        width: 140px;
+        height: 80px;
+    }
+
+    .back-img {
+        width: 100%;
+        height: 150px;
+        margin-top: 340px;
+        opacity: 0.8;
+    }
+
+    .footer {
+        position: fixed;
+        background-color: #FBFDEA;
+        text-align: center;
+        width: 35%;
+        height: 200px;
+        font-size: 15px;
+    }
+
+    .contact {
+        background-color: #FBFDEA;
+        width: 100%;
+        height: 75px;
+        display: inline-block;
+    }
+
+    article {
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 70%;
+        min-width: 243px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .right-container {
+        display: inline-block;
+        margin-left: 130px;
         position: absolute;
         /*background-color: bisque;*/
         width: 20%;
