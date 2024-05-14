@@ -43,7 +43,7 @@ h4 {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .animal-title > h1{
@@ -75,11 +75,15 @@ h1 {
     width: 208px;
     height: 130px;
     display: block;
+    cursor: pointer;
+    font-family: "Hi Melody", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .logo-name {
     margin-top: 13px;
-    margin-right: 25px;
+    margin-right: 11px;
     float: right;
     width: 110px;
     height: 120px;
@@ -87,7 +91,7 @@ h1 {
 
 .logo-img {
     margin-top: 10px;
-    margin-left: 23px;
+    margin-left: 36px;
     float: left;
     width: 50px;
     height: 120px;
@@ -97,6 +101,7 @@ h1 {
 }
 
 .about-container {
+    margin-top: 15px;
     width: 208px;
     height: 700px;
     font-family: "Hi Melody", sans-serif;
@@ -106,12 +111,22 @@ h1 {
     background-color: #FBFDEA;
 }
 
-.cat-about {
+.seoli-imf {
     margin-left: 40px;
     margin-top: 15px;
     padding-top: 35px;
     width: 140px;
     height: 80px;
+    display: none;
+}
+
+.munch-imf {
+    margin-left: 40px;
+    margin-top: 15px;
+    padding-top: 35px;
+    width: 140px;
+    height: 80px;
+    display: none;
 }
 
 .footer {
@@ -142,8 +157,8 @@ h1 {
 }
 
 .select-container{
-    width: 100%;
-    height: 100%;
+    width: 1712px;
+    height: 700px;
     display: block;
 }
 
@@ -187,17 +202,42 @@ img {
     background-color: black;
 }
 
-
-.back-img {
+.back-img1 {
+    margin-top: 15px;
+    padding-top: 50px;
     width: 208px;
-    height: 250px;
-    margin-top: 360px;
+    height: 200px;
     opacity: 0.8;
 }
 
-.back-img img {
-    width: 100%;
-    height: 100%;
+.back-img1 img {
+    object-fit: cover;
+}
+
+.back-img2 {
+    width: 208px;
+    height: 200px;
+    opacity: 0.8;
+}
+
+.back-img2 img {
+    object-fit: cover;
+}
+
+.back-img3 {
+    opacity: 0.8;
+}
+
+.back-img4{
+    margin-top: 335px;
+    opacity: 0.8;
+    display: none;
+}
+
+.about-container img {
+    overflow: hidden;
+    width: 208px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -215,6 +255,20 @@ img {
     height: 150px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.choco-ready{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: #FBFDEA;
+    cursor: pointer;
+}
+
+.choco-ready > h6 {
+    margin-top: 55px;
 }
 
 .icon-img > img:hover {
@@ -245,6 +299,54 @@ img {
     height: 200px;
     float: right;
     cursor: pointer;
+}
+
+.exit{
+    margin-left: 1845px;
+    margin-top: 40px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0.6;
+    display: none;
+    cursor: pointer;
+}
+
+.exit:hover {
+    transform: scale(1.1);
+    transition: transform 0.8s ease;
+}
+
+.exit img {
+    margin-left: 7px;
+    margin-top: 5px;
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+}
+
+#articles article {
+    opacity: 0; /* 초기에는 투명하게 설정 */
+    animation: fadeIn 0.5s ease forwards; /* fadeIn 애니메이션 적용 */
+}
+
+/* Fade In 애니메이션 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes backFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Fade Out 애니메이션 */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
 
