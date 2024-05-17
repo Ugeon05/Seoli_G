@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const seolIcon = document.querySelector(".seol-icon");
     const munchIcon = document.querySelector(".munch-icon");
+    const cookieIcon = document.querySelector(".cookie-icon");
+    const kkakkungIcon = document.querySelector(".kkakkung-icon");
     const selectContainer = document.querySelector(".select-container");
     const imgPop = document.querySelector('.img-pop');
     const catGallery = document.querySelector('.cat-gallery');
@@ -14,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const backImage4 = document.querySelector('.back-img4');
     const seoliImf = document.querySelector(".seoli-imf");
     const munchImf = document.querySelector(".munch-imf");
+    const cookieImf = document.querySelector(".cookie-imf");
+    const kkakkungImf = document.querySelector(".kkakkung-imf");
     const logoClicker = document.querySelector(".logo");
 
     function handleExit() {
@@ -21,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
         imgPop.style.display = "none";
         seoliImf.style.display = "none";
         munchImf.style.display = "none";
+        cookieImf.style.display = "none";
+        kkakkungImf.style.display = "none";
         catGallery.style.opacity = '1';
         backImage4.style.display = 'none';
         backImageBox1.style.display = 'block';
@@ -51,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
         handleExit();
     });
     
-
     function handleIconClick(imageElement, imageFunction) {
         selectContainer.style.display = "none";
         exitButton.style.display = "block";
@@ -73,7 +78,14 @@ document.addEventListener("DOMContentLoaded", function () {
     munchIcon.addEventListener("click", function () {
         handleIconClick(munchImf, dogsImg);
     });
-    
+
+    cookieIcon.addEventListener("click", function () {
+        handleIconClick(cookieImf, cats2Img);
+    });
+
+    kkakkungIcon.addEventListener("click", function () {
+        handleIconClick(kkakkungImf, dogs2Img);
+    });
 
     function catsImg() {
         const gallerys = document.getElementById('articles');
@@ -87,6 +99,54 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(() => {
                 article.classList.add('fadeIn');
             });
+        }
+    }
+
+    function dogsImg() {
+        const gallerys = document.getElementById('articles');
+        for (let i = 1; i <= 30; i++) {
+            const article = document.createElement('article');
+            const img = document.createElement('img');
+            img.src = `img/dogs/dog${i}.jpg`;
+            img.alt = `dog${i}`;
+            article.appendChild(img);
+            gallerys.appendChild(article);
+        }
+    }
+
+    function cats2Img() {
+        const gallerys = document.getElementById('articles');
+        for (let i = 1; i <= 30; i++) {
+            const article = document.createElement('article');
+            const img = document.createElement('img');
+            img.src = `img/cats2/cookie${i}.jpg`;
+            img.alt = `dog${i}`;
+            article.appendChild(img);
+            gallerys.appendChild(article);
+        }
+    }
+
+    function cats2Img() {
+        const gallerys = document.getElementById('articles');
+        for (let i = 1; i <= 20; i++) {
+            const article = document.createElement('article');
+            const img = document.createElement('img');
+            img.src = `img/cats2/cookie${i}.jpg`;
+            img.alt = `dog${i}`;
+            article.appendChild(img);
+            gallerys.appendChild(article);
+        }
+    }
+
+    function dogs2Img() {
+        const gallerys = document.getElementById('articles');
+        for (let i = 1; i <= 20; i++) {
+            const article = document.createElement('article');
+            const img = document.createElement('img');
+            img.src = `img/dogs2/kk${i}.jpg`;
+            img.alt = `dog${i}`;
+            article.appendChild(img);
+            gallerys.appendChild(article);
         }
     }
 
@@ -104,18 +164,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         });
-    }
-
-    function dogsImg() {
-        const gallerys = document.getElementById('articles');
-        for (let i = 1; i <= 30; i++) {
-            const article = document.createElement('article');
-            const img = document.createElement('img');
-            img.src = `img/dogs/dog${i}.jpg`;
-            img.alt = `dog${i}`;
-            article.appendChild(img);
-            gallerys.appendChild(article);
-        }
     }
 
     const imgArticles = document.getElementById('articles');
